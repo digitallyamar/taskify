@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Add Progress{% endblock %}
+{% block content %}
+    <h1>Add Progress Update</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="update" class="form-label">Progress Update</label>
+            <textarea class="form-control" id="update" name="update" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Update</button>
+    </form>
+{% endblock %}

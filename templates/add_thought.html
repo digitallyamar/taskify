@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Add Thought{% endblock %}
+{% block content %}
+    <h1>Add Thought</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="thought" class="form-label">Thought</label>
+            <textarea class="form-control" id="thought" name="thought" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Thought</button>
+    </form>
+{% endblock %}

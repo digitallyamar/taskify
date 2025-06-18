@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Add Feature{% endblock %}
+{% block content %}
+    <h1>Add Feature</h1>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="feature" class="form-label">Feature</label>
+            <input type="text" class="form-control" id="feature" name="feature" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Feature</button>
+    </form>
+{% endblock %}

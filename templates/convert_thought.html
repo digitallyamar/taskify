@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Convert Thought to Feature{% endblock %}
+{% block content %}
+    <h1>Convert Thought to Feature</h1>
+    <p>Original Thought: {{ thought.thought }}</p>
+    <form method="POST">
+        <div class="mb-3">
+            <label for="feature" class="form-label">Feature Description</label>
+            <input type="text" class="form-control" id="feature" name="feature" value="{{ thought.thought }}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Convert to Feature</button>
+    </form>
+{% endblock %}
